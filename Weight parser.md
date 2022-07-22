@@ -19,7 +19,7 @@ Todo list
   - PyTorch 설치 전 [Anaconda](https://www.anaconda.com/)를 먼저 설치
   - Windows의 PowerShell 실행 후 아래 command 입력
     -  CPU 사용: ```conda install pytorch torchvision torchaudio cpuonly -c pytorch``` 
-    -  CUDA10.2 사용: ```CUDA-10.2 PyTorch builds are no longer available for Windows, please use CUDA-11.6```
+    -  CUDA11.3 사용: ```conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch```
 
 
 ## PyTorch model file (*.pt*, *.pth*)

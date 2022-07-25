@@ -1,4 +1,12 @@
 # NPU project
+
+# Weekly Schedule 
+- 7/25 - 7/29
+  - [ ] Reference를 위한 Lenet-5 구현 (2일)
+  - [ ] Simple weight parser 구현 (데이터 추출) (2일)
+
+
+
 ```
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #

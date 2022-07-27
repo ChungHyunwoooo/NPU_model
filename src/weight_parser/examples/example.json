@@ -1,0 +1,93 @@
+{
+    "network_name": "ExampleNet-3",
+    "layer_count": 3,
+    "i_fixed": false,
+    "i_bit_width": 0,
+    "w_fixed": false,
+    "w_bit_width": 0,
+    "layers": 
+    [
+        {
+            "layer_id": 0,
+            "layer_type": "convolution",
+            "layer_name": "Conv1",
+            
+            "input": 
+            {
+                "width": 32,
+                "height": 32,
+                "channel": 1,
+                "padding": 0,
+                "offset": 0,
+                "size": 9660
+            },
+            "kernel":
+            {
+                "width": 5,
+                "height": 5,
+                "sets": 6,
+                "stride": 1,
+                "offset": 9660,
+                "size": 9660
+            },
+            "activation": "ReLU",
+            "output":
+            {
+                "width": 28,
+                "height": 28,
+                "offset": 9660,
+                "size": 9660
+            }
+        },
+        {
+            "layer_id": 1,
+            "layer_type": "linear",
+            "layer_name": "FC1",
+            
+            "input": 
+            {
+                "width": 32,
+                "offset": 0,
+                "size": 9660
+            },
+            "kernel":
+            {
+                "width": 5,
+                "offset": 9660,
+                "size": 9660
+            },
+            "activation": "ReLU",
+            "output":
+            {
+                "offset": 9660,
+                "size": 9660
+            }
+        },
+        {
+            "layer_id": 2,
+            "layer_type": "pooling",
+            "layer_name": "Pool1",
+            
+            "input": 
+            {
+                "width": 32,
+                "height": 32,
+                "channel": 1,
+                "offset": 0,
+                "size": 9660
+            },
+            "pool":
+            {
+                "type": "max",
+                "size": 2
+            },
+            "output":
+            {
+                "width": 28,
+                "height": 28,
+                "offset": 9660,
+                "size": 9660
+            }
+        }
+    ]
+}
